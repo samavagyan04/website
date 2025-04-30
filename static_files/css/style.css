@@ -1,0 +1,594 @@
+body, html {
+	font-family: 'Open Sans', sans-serif;
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	color: #666;
+	width: 100% !important;
+	height: 100% !important;
+}
+h1 {
+	font-weight: 700;
+}
+h1 strong {
+	font-weight: 900;
+}
+h2 {
+	line-height: 20px;
+	margin: 0;
+	color: #444;
+	font-weight: 400;
+	margin-bottom: 30px;
+	font-size: 34px;
+	text-transform: uppercase;
+}
+h3, h4 {
+	color: #333;
+	font-size: 20px;
+	font-weight: 600;
+}
+h5 {
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 20px;
+}
+p {
+	font-size: 15px;
+}
+p.intro {
+	font-size: 16px;
+	margin: 12px 0 0;
+	line-height: 24px;
+	font-family: 'Open Sans', sans-serif;
+}
+a {
+	color: #222;
+}
+a:hover, a:focus {
+	text-decoration: none;
+	color: #526cbb;
+}
+ul, ol {
+	list-style: none;
+}
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.clearfix {
+	display: inline-block;
+}
+* html .clearfix {
+	height: 1%;
+}
+.clearfix {
+	display: block;
+}
+ul, ol {
+	padding: 0;
+	webkit-padding: 0;
+	moz-padding: 0;
+}
+hr {
+	height: 4px;
+	width: 70px;
+	text-align: center;
+	position: relative;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6b4da8+0,4977c2+100 */
+	background: rgb(107,77,168); /* Old browsers */
+	background: -moz-linear-gradient(left, rgba(107,77,168,1) 0%, rgba(73,119,194,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(107,77,168,1) 0%, rgba(73,119,194,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(107,77,168,1) 0%, rgba(73,119,194,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b4da8', endColorstr='#4977c2', GradientType=1 ); /* IE6-9 */
+	margin: 0 auto;
+	margin-bottom: 30px;
+	border: 0;
+}
+/* Navigation */
+#nav {
+	z-index: 9999;
+}
+#nav.affix {
+	position: fixed;
+	top: 0;
+	width: 100%
+}
+.navbar .navbar-nav {
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+}
+.navbar .navbar-collapse {
+	text-align: center;
+}
+.navbar-custom {
+	margin-bottom: 0;
+	background-color: #222;
+	border-radius: 0px;
+	padding: 10px 0;
+}
+.navbar-custom .navbar-brand {
+	font-weight: 600;
+}
+.navbar-custom .navbar-brand:focus {
+	outline: 0;
+}
+.navbar-custom .navbar-brand .navbar-toggle {
+	padding: 4px 6px;
+	font-size: 16px;
+	color: #fff;
+}
+.navbar-custom .navbar-brand .navbar-toggle:focus, .navbar-custom .navbar-brand .navbar-toggle:active {
+	outline: 0;
+}
+.navbar-custom a {
+	color: #aaa;
+}
+.navbar-custom .nav li a {
+	margin: 0 20px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	-webkit-transition: background .3s ease-in-out;
+	-moz-transition: background .3s ease-in-out;
+	transition: background .3s ease-in-out;
+}
+.navbar-custom .nav li a:hover {
+	outline: 0;
+	color: #526cbb;
+	background-color: transparent;
+}
+.navbar-custom .nav li a:focus, .navbar-custom .nav li a:active {
+	outline: 0;
+	background-color: transparent;
+	color: #526cbb;
+}
+.navbar-custom .nav li.active {
+	outline: 0;
+}
+.navbar-custom .nav li.active a {
+	background-color: rgba(255,255,255,.3);
+}
+.navbar-custom .nav li.active a:hover {
+	color: #fff;
+}
+.btn-default {
+	color: rgba(255,255,255,0.8);
+	background-color: transparent;
+	border: 2px solid rgba(255,255,255,0.5);
+	padding: 12px 20px;
+	margin: 0;
+	font-size: 15px;
+	border-radius: 0;
+	text-transform: uppercase;
+}
+.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active {
+	color: #fff;
+	background-color: #222;
+	border-color: #222;
+}
+.btn-primary {
+	color: #526cbb;
+	background-color: transparent;
+	padding: 12px 20px;
+	border: 2px solid #526cbb;
+	border-radius: 0;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: 400;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active {
+	color: #fff;
+	background-color: #526cbb;
+	border-color: #526cbb;
+}
+.btn-primary i.fa {
+	margin-right: 10px;
+}
+.btn:active, .btn.active {
+	background-image: none;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+	outline: none;
+	outline-offset: none;
+}
+
+/* Home Section */
+.intro {
+    display: table;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: #fff;
+    background: url(../img/images.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.intro .overlay {
+    padding: 100px 0;
+    background: -moz-linear-gradient(left, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%); /* Firefox */
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%); /* Chrome, Safari */
+    background: linear-gradient(to right, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%); /* Standard */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66000000', endColorstr='#66000000', GradientType=1 ); /* IE6-9 */
+}
+
+/* New Download CV Button Styling */
+.intro .btn-download {
+    background-color: #526cbb;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.intro .btn-download:hover {
+    background-color: #4050a0;
+    text-decoration: none;
+}
+
+/* About Section */
+#about {
+	padding: 100px 0;
+	background: #f6f6f6;
+  }
+  
+  #about .about-text {
+	margin-left: 10px;
+  }
+  
+  #about img {
+	float: right;
+	width: auto; /* Լայնությունը ավտոմատ՝ համամասնությունը պահպանելու համար */
+	height: 440px; /* Փոխիր այս արժեքը՝ ուզած երկարությունը ստանալու համար */
+}
+
+  
+  #about p {
+	margin-top: 20px;
+	margin-bottom: 30px;
+  }
+  
+  #about .about-info {
+	list-style: none;
+	padding: 0;
+  }
+  
+  #about .about-info li {
+	display: flex;
+	align-items: center;
+	gap: 10px; /* կամ 5px, ինչպես ուզում ես */
+	margin-bottom: 10px;
+}
+  
+  #about .about-info li strong {
+	font-weight: bold;
+	color: #333;
+  }
+  
+  #about .about-info li span {
+	font-weight: normal;
+	color: #555;
+  }
+  
+  #about .btn-primary {
+	margin-top: 20px;
+  }
+  
+/* Skills Section */
+#skills {
+	padding: 100px 0;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6b4da8+0,4977c2+100 */
+	background: rgb(107,77,168); /* Old browsers */
+	background: -moz-linear-gradient(left, rgba(107,77,168,1) 0%, rgba(73,119,194,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(107,77,168,1) 0%, rgba(73,119,194,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(107,77,168,1) 0%, rgba(73,119,194,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b4da8', endColorstr='#4977c2', GradientType=1 ); /* IE6-9 */
+}
+#skills h2 {
+	color: #fff;
+}
+#skills hr {
+	background: rgba(255,255,255,0.3);
+}
+#skills .skill {
+	margin-bottom: 40px;
+	text-align: center;
+	padding: 0px;
+}
+#skills .skill h4 {
+	font-weight: 600;
+	color: #fff;
+}
+.chart {
+	position: relative;
+	display: inline-block;
+	width: 140px;
+	height: 140px;
+	margin-bottom: 26px;
+	text-align: center;
+}
+.chart canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.percent {
+	display: inline-block;
+	font-size: 21px;
+	color: #fff;
+	line-height: 140px;
+	z-index: 2;
+}
+.percent:after {
+	content: '%';
+	margin-left: 0.1em;
+	font-size: .8em;
+}
+
+#portfolio {
+    margin-top: 50px;
+}
+/* Portfolio Section */
+/* Ընդհանուր էջի ձևավորում */
+/* Ընդհանուր էջի ձևավորում */
+.page {
+    padding: 50px 20px;
+    background: #f9f9f9;
+    min-height: auto; /* Էլ չի ձգվում ամբողջ էկրանին */
+    margin-bottom: 10px; /* Հանգիստ փոքր բացատ Education-ի ու Experience-ի միջև */
+}
+
+/* Վերնագիր (Education, Experience) */
+.heading {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #333;
+}
+
+/* Յուրաքանչյուր բլոկի համար */
+.resume-wrap {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+/* Հովերի ժամանակ փոքր շարժում */
+.resume-wrap:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon հատվածը */
+.icon {
+    width: 60px;
+    height: 60px;
+    background: #6c63ff; /* մանուշակագույն ֆոն */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+/* Icon-ի ներսի նկարը */
+.icon-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+/* Տեքստային հատվածը */
+.text {
+    margin-left: 20px;
+}
+
+/* Ամսաթվի ձևավորում */
+.date {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Վերնագիր (դիպլոմ/փորձառություն) */
+.text h2 {
+    font-size: 22px;
+    margin: 5px 0;
+    color: #333;
+}
+
+/* Դիրք/ֆակուլտետի ձևավորում */
+.position {
+    font-size: 16px;
+    font-weight: 600;
+    color: #6c63ff;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Նկարագրության տեքստ */
+.text p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+/* Contact Section */
+#contact {
+	color: #fff;
+	background: url(../img/contact-bg.jpg) no-repeat center top;
+	background-color: #7bc3d1;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+#contact .overlay {
+	padding: 100px 0 40px 0;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6b4da8+0,4977c2+100&0.85+0,0.85+100 */
+	background: -moz-linear-gradient(left, rgba(107,77,168,0.85) 0%, rgba(73,119,194,0.85) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(107,77,168,0.85) 0%, rgba(73,119,194,0.85) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(107,77,168,0.85) 0%, rgba(73,119,194,0.85) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d96b4da8', endColorstr='#d94977c2', GradientType=1 ); /* IE6-9 */
+}
+#contact h2 {
+	color: #fff;
+}
+#contact hr {
+	background: rgba(255,255,255,0.3);
+}
+#contact h3 {
+	padding-top: 20px;
+	font-size: 20px;
+	font-weight: 400;
+	color: #fff;
+}
+#contact form {
+	padding: 30px 0;
+}
+#contact i.fa {
+	color: #121d1f;
+	margin-bottom: 10px;
+}
+#contact .text-danger {
+	color: #E87E04;
+	text-align: left;
+}
+label {
+	font-size: 12px;
+	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
+	float: left;
+}
+#contact .form-control {
+	display: block;
+	width: 100%;
+	padding: 6px 12px;
+	margin: 10px 0;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #222;
+	background-color: rgba(255,255,255,0.6);
+	background-image: none;
+	border: 0;
+	border-radius: 2px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-webkit-transition: none;
+	-o-transition: none;
+	transition: none;
+}
+#contact .form-control:focus {
+	border-color: inherit;
+	outline: 0;
+	-webkit-box-shadow: transparent;
+	box-shadow: transparent;
+}
+.form-control::-webkit-input-placeholder {
+color: #2c3e50;
+}
+.form-control:-moz-placeholder {
+color: #2c3e50;
+}
+.form-control::-moz-placeholder {
+color: #2c3e50;
+}
+.form-control:-ms-input-placeholder {
+color: #2c3e50;
+}
+#contact .btn {
+	margin-top: 20px;
+}
+#contact .social {
+	margin-top: 80px;
+}
+#contact .social ul li {
+	display: inline-block;
+	margin: 0 20px;
+}
+#contact .social i.fa {
+	font-size: 30px;
+	padding: 4px 5px;
+	color: #fff;
+	transition: all 0.5s;
+}
+#contact .social i.fa:hover {
+	color: #121d1f;
+}
+/* Footer Section*/
+/* Footer Section*/
+#footer {
+	background: #222;
+	color: #777;
+	padding: 30px 0 25px 0;
+}
+#footer p {
+	font-size: 13px;
+}
+#footer a {
+	color: #aaa;
+}
+#footer a:hover {
+	color: #526cbb;
+}
+
+/* Media Queries */
+@media(min-width:768px) {
+.intro {
+	height: 100%;
+	padding: 0;
+	color: #fff;
+}
+.intro H1 {
+	font-size: 60px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.intro .intro-text p {
+	font-size: 20px;
+	margin-bottom: 40px;
+	margin-top: 20px;
+	letter-spacing: 2px;
+}
+section {
+	padding: 120px 0;
+}
+header .intro-text {
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+}
+
+@media (max-width: 1024px) {
+#about img {
+	float: left;
+	margin-bottom: 20px;
+}
+}
