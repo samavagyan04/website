@@ -13,9 +13,7 @@ def HomePage(request):
     footer=FooterInfo.objects.all()
     form = ContactForm()
     if request.method == 'POST':
-        print('-------------------------')
         form = ContactForm(request.POST)
-        print(form)
         if form.is_valid():
             emaill = EmailMessage(
                 subject = f'Hello {request.POST.get("name")}',
@@ -24,7 +22,7 @@ def HomePage(request):
                 to = [request.POST.get("email")]
             )
             email_for_me = EmailMessage(
-                subject=f'Նամակ {request.POST.get("name")}ից',
+                subject=f'Նամակ {request.POST.get("name")}-ից',
                 body= f'''{request.POST.get("name")}, {request.POST.get("email")}, {request.POST.get("message")}''',
                 from_email=EMAIL_HOST_USER,
                 to = [EMAIL_HOST_USER]
@@ -52,3 +50,4 @@ def HomePage(request):
 
 def page404(request):
     return render(request,'404.html')
+
